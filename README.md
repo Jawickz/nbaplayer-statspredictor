@@ -75,34 +75,6 @@ $$\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$$
 
 ---
 
-## 📁 Repository Structure
-
-```
-nbaplayer-statspredictor/
-│
-├── data/
-│   ├── raw/                  # Raw box score API dumps
-│   └── processed/            # Feature-engineered tabular data
-│
-├── notebooks/
-│   ├── 01_data_exploration.ipynb   # EDA & data sanity checks
-│   ├── 02_feature_engineering.ipynb# Rolling stats & contextual features
-│   └── 03_model_training.ipynb     # Model training & SHAP analysis
-│
-├── src/
-│   ├── __init__.py
-│   ├── data_loader.py        # Ingestion scripts for NBA data
-│   ├── features.py           # Feature creation functions & pipelines
-│   ├── train.py              # Training script with Optuna integration
-│   └── predict.py            # Inference pipeline for upcoming games
-│
-├── tests/                    # Unit tests for data transform & feature logic
-├── .gitignore
-├── LICENSE
-├── README.md
-└── requirements.txt
-```
-
 ---
 
 ## 🚀 Quickstart & Setup
